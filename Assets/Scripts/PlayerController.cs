@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
      */
 
     public float speed = 10.0f;
+    public float angularSpeed = 100.0f;
 
     private NavMeshAgent agent;
     private Camera mainCam;
@@ -43,6 +44,7 @@ public class PlayerController : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         mainCam = Camera.main;
         agent.speed = speed;
+        agent.angularSpeed = angularSpeed;
     }
 
     void Start()

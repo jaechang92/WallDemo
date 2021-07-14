@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     void init()
     {
-        player = PlayerController.instance.transform;
+        player = GameObject.FindWithTag("Player").transform;
     }
 
     void Start()
